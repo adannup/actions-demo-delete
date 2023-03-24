@@ -46,7 +46,7 @@ jobs:
         with:
           name: dist-files
           path: |
-            dist
+            .next
             package.json
       - name: Deploy
         run: echo "Deploying..."

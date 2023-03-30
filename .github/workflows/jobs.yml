@@ -45,7 +45,7 @@ jobs:
         run: npm run build
       - name: Publish JS filename
         id: publish
-        run: find .next/server/client-*.js -type f -execdir echo 'script-file={}' >> $GITHU_OUTPUT ';'
+        run: find .next/server/client-*.js -type f -execdir echo 'script-file={}' >> $GITHUB_OUTPUT ';'
       - name: Upload artifacts
         uses: actions/upload-artifact@v3
         with:
